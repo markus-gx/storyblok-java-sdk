@@ -47,6 +47,7 @@
         <repository>
             <id>github</id>
             <name>GitHub geilix10 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/geilix10/storyblok-java-sdk</url>
         </repository>
     </distributionManagement>
 </project>
