@@ -22,19 +22,19 @@ Github Packages Dependency (See: https://docs.github.com/en/packages/guides/conf
 </dependency>
 ```
 For those who are not yet familiar with GitHub packages you can also pull from Jitpack. 
-```
+```xml
 <repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
  <!-------->
  <dependency>
-	    <groupId>com.github.geilix10</groupId>
-	    <artifactId>storyblok-java-sdk</artifactId>
-	    <version>1</version>
-	</dependency>
+    <groupId>com.github.geilix10</groupId>
+    <artifactId>storyblok-java-sdk</artifactId>
+    <version>1</version>
+</dependency>
 ```
 
 # Examples And Usage
@@ -73,13 +73,3 @@ Stories<Map<String,Object>> story = client.fetchStories(StoryblokQuery.Storyblok
                 .startsWith("h")
                 .build());
 ```
-
-#~~Version 0.0.1 - deprecated~~
-
-## ~~How to use?~~
-~~Just include the class in src folder and use it like:~~
-``RichTextResolver.resolveTextOfEntry(<textToResolve>);``
-
-## ~~Example~~
-~~If you retrieve a "blok" from the Storyblok API you can pass the `text` field into the above method. 
-You can see a static JSON Example in the test files.~~ 
