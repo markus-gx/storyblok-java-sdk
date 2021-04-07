@@ -1,5 +1,5 @@
 # Storyblok Java SDK - 1.0
-
+[![Java CI with Maven](https://github.com/geilix10/storyblok-java-sdk/actions/workflows/maven.yml/badge.svg)](https://github.com/geilix10/storyblok-java-sdk/actions/workflows/maven.yml)
 ## TL;DR
 This is a Java SDK/Wrapper around (yet only) the Storyblok Delivery API. 
 ### Version 1.0
@@ -11,10 +11,17 @@ This is a Java SDK/Wrapper around (yet only) the Storyblok Delivery API.
 # What is Storyblok?
 * Website: https://www.storyblok.com
 
-#Installation
+# Installation
+## Maven
+```xml
+<dependency>
+  <groupId>io.geilehner</groupId>
+  <artifactId>storyblok-java-sdk</artifactId>
+  <version>1.0</version>
+</dependency>
+```
 
-
-#Examples And Usage
+# Examples And Usage
 ## Initialize Storyblok SDK
 ``
 Storyblok client = new Storyblok("YOUR_API_KEY");

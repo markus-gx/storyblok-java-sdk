@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5cb5dd2-6d8f-46d2-8977-9519fd91934e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/Storyblok.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/exception/StoryblokException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/FilterQueryParameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/Stories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/Story.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/StoryblokQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/AlternateStory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/FilterOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/ResolveLinks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/StoryContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/StoryVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/TranslatedSlug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/StoryblokTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/model/CustomStoryContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/model/FilterQueryParameterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/model/StoryblokQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/RichTextResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/RichTextResolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +182,7 @@
       <updated>1584954325267</updated>
       <workItem from="1584954328330" duration="4177000" />
       <workItem from="1617778594095" duration="4068000" />
-      <workItem from="1617782896218" duration="13613000" />
+      <workItem from="1617782896218" duration="15686000" />
     </task>
     <servers />
   </component>
