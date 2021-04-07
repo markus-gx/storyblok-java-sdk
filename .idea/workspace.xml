@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5cb5dd2-6d8f-46d2-8977-9519fd91934e" name="Default Changelist" comment="" />
+    <list default="true" id="f5cb5dd2-6d8f-46d2-8977-9519fd91934e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/Storyblok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/exception/StoryblokException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/FilterQueryParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/Stories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/Story.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/StoryblokQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/AlternateStory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/FilterOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/ResolveLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/StoryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/StoryVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/model/content/TranslatedSlug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/StoryblokTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/model/CustomStoryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/model/FilterQueryParameterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/geilehner/storyblok/model/StoryblokQueryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/RichTextResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/geilehner/storyblok/RichTextResolver.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,21 +43,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/storyblok-java-sdk" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -39,36 +68,56 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;JSON" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="io.geilehner.storyblok.model" />
       <recent name="io.geilehner.storyblok" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.geilehner.storyblok.model" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.RichTextResolverTest.resolveTextOfEntry">
+  <component name="RunManager" selected="JUnit.StoryblokTest.testSimpleStorbylokFetch">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="storyblok-java-sdk" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterQueryParameterTest.testFilterQueryParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="storyblok-java-sdk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.geilehner.storyblok.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.geilehner.storyblok.model" />
+      <option name="MAIN_CLASS_NAME" value="io.geilehner.storyblok.model.FilterQueryParameterTest" />
+      <option name="METHOD_NAME" value="testFilterQueryParameter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,8 +138,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StoryblokQueryTest.testStoryblokQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="storyblok-java-sdk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.geilehner.storyblok.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.geilehner.storyblok.model" />
+      <option name="MAIN_CLASS_NAME" value="io.geilehner.storyblok.model.StoryblokQueryTest" />
+      <option name="METHOD_NAME" value="testStoryblokQuery" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoryblokTest.testSimpleStorbylokFetch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="storyblok-java-sdk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.geilehner.storyblok.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.geilehner.storyblok" />
+      <option name="MAIN_CLASS_NAME" value="io.geilehner.storyblok.StoryblokTest" />
+      <option name="METHOD_NAME" value="testSimpleStorbylokFetch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StoryblokTest.testSimpleStorbylokFetch" />
+        <item itemvalue="JUnit.StoryblokQueryTest.testStoryblokQuery" />
+        <item itemvalue="JUnit.FilterQueryParameterTest.testFilterQueryParameter" />
         <item itemvalue="JUnit.RichTextResolverTest.resolveTextOfEntry" />
         <item itemvalue="Application.Main" />
       </list>
@@ -108,6 +192,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f5cb5dd2-6d8f-46d2-8977-9519fd91934e" name="Default Changelist" comment="" />
@@ -116,68 +201,24 @@
       <option name="presentableId" value="Default" />
       <updated>1584954325267</updated>
       <workItem from="1584954328330" duration="4177000" />
+      <workItem from="1617778594095" duration="4068000" />
+      <workItem from="1617782896218" duration="13613000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="2784" y="155" key="#Project_Structure" timestamp="1584954338817">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state x="2784" y="155" key="#Project_Structure/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584954338817" />
-    <state x="2997" y="206" key="#com.intellij.ide.util.MemberChooser" timestamp="1584959478384">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state x="2997" y="206" key="#com.intellij.ide.util.MemberChooser/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959478384" />
-    <state x="1680" y="-63" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584956589707">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state x="1680" y="-63" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584956589707" />
-    <state width="2966" height="506" key="GridCell.Tab.0.bottom" timestamp="1584959636535">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="506" key="GridCell.Tab.0.bottom/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959636535" />
-    <state width="2966" height="506" key="GridCell.Tab.0.center" timestamp="1584959636533">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="506" key="GridCell.Tab.0.center/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959636533" />
-    <state width="2966" height="506" key="GridCell.Tab.0.left" timestamp="1584959636532">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="506" key="GridCell.Tab.0.left/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959636532" />
-    <state width="2966" height="506" key="GridCell.Tab.0.right" timestamp="1584959636534">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="506" key="GridCell.Tab.0.right/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959636534" />
-    <state width="2966" height="620" key="GridCell.Tab.1.bottom" timestamp="1584959374243">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="620" key="GridCell.Tab.1.bottom/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959374243" />
-    <state width="2966" height="620" key="GridCell.Tab.1.center" timestamp="1584959374241">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="620" key="GridCell.Tab.1.center/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959374241" />
-    <state width="2966" height="620" key="GridCell.Tab.1.left" timestamp="1584959374239">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="620" key="GridCell.Tab.1.left/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959374239" />
-    <state width="2966" height="620" key="GridCell.Tab.1.right" timestamp="1584959374242">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="2966" height="620" key="GridCell.Tab.1.right/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959374242" />
-    <state x="2672" y="71" key="SettingsEditor" timestamp="1584957737581">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state x="2672" y="71" key="SettingsEditor/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584957737581" />
-    <state x="2942" y="224" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584954692612">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state x="2942" y="224" key="com.intellij.testIntegration.createTest.CreateTestDialog/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584954692612" />
-    <state width="380" height="182" key="javadoc.popup.new" timestamp="1584959433055">
-      <screen x="1680" y="-356" width="3008" height="1692" />
-    </state>
-    <state width="380" height="182" key="javadoc.popup.new/1680.-356.3008.1692/0.0.1680.1050@1680.-356.3008.1692" timestamp="1584959433055" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

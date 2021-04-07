@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+//todo Refactor
 public class RichTextResolver {
     public static String resolveTextOfEntry(Map<String,Object> text) throws NotResolveableException {
         List<Map<String,Object>> content = (List<Map<String, Object>>) text.get("content");
