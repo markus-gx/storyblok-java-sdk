@@ -13,12 +13,28 @@ This is a Java SDK/Wrapper around (yet only) the Storyblok Delivery API.
 
 # Installation
 ## Maven
+Github Packages Dependency (See: https://docs.github.com/en/packages/guides/configuring-apache-maven-for-use-with-github-packages):
 ```xml
 <dependency>
   <groupId>io.geilehner</groupId>
   <artifactId>storyblok-java-sdk</artifactId>
   <version>1.0</version>
 </dependency>
+```
+For those who are not yet familiar with GitHub packages you can also pull from Jitpack. 
+```
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+ <!-------->
+ <dependency>
+	    <groupId>com.github.geilix10</groupId>
+	    <artifactId>storyblok-java-sdk</artifactId>
+	    <version>1</version>
+	</dependency>
 ```
 
 # Examples And Usage
