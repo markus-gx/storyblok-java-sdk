@@ -29,7 +29,6 @@ For those who are not yet familiar with GitHub packages you can also pull from J
 	    <url>https://jitpack.io</url>
 	</repository>
 </repositories>
- <!-------->
  <dependency>
     <groupId>com.github.geilix10</groupId>
     <artifactId>storyblok-java-sdk</artifactId>
