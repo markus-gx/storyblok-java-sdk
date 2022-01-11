@@ -6,6 +6,7 @@ import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import io.geilehner.storyblok.adapters.*;
 import io.geilehner.storyblok.exception.StoryblokException;
 import io.geilehner.storyblok.model.Stories;
 import io.geilehner.storyblok.model.Story;
@@ -17,6 +18,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 public class Storyblok {
     private final String API_URL = "https://api.storyblok.com/v1/cdn";
@@ -31,17 +33,11 @@ public class Storyblok {
         this.API_KEY = apiKey;
         this.gson = new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
-                .registerTypeAdapter(LocalDateTime.class, (JsonDeserializer<LocalDateTime>) (json, typeOfT, context) -> {
-                    if(json.getAsJsonPrimitive().getAsString() == null || !json.getAsJsonPrimitive().getAsString().isEmpty()){
-                        try{
-                            return LocalDateTime.parse(json.getAsJsonPrimitive().getAsString(), DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSz"));
-                        }
-                        catch (DateTimeParseException e){
-                            return LocalDateTime.parse(json.getAsJsonPrimitive().getAsString(), DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
-                        }
-                    }
-                    return null;
-                })
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeAdapter())
+                .registerTypeAdapter(Long.class,new LongTypeAdapter())
+                .registerTypeAdapter(UUID.class,new UUIDTypeAdapter())
+                .registerTypeAdapter(Integer.class,new IntegerTypeAdapter())
+                .registerTypeAdapter(Double.class, new DoubleTypeAdapter())
                 .create();
     }
 

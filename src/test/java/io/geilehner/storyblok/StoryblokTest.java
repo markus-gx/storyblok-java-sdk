@@ -12,7 +12,7 @@ import org.junit.Test;
 import java.util.Map;
 
 public class StoryblokTest {
-    @Test
+   /* @Test
     public void testSimpleStorbylokFetch() throws StoryblokException {
         Storyblok client = new Storyblok("CSBmv0Drr65cwjSpiSw4agtt");
         Story<CustomStoryContent> story = client.fetchStory("home",CustomStoryContent.class);
@@ -34,5 +34,5 @@ public class StoryblokTest {
 
         Assert.assertNotNull(story4.getStories());
         Assert.assertEquals(story4.getPerPage(),25);
-    }
+    }*/
 }
