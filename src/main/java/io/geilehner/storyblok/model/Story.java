@@ -29,10 +29,19 @@ public class Story<T> {
     private T content;
     private int position;
     private boolean isStartpage;
+    private List<String> tagList;
     private long parentId;
     private UUID groupId;
     private List<TranslatedSlug> translatedSlugs;
     private List<AlternateStory> alternates;
+
+    public List<String> getTagList() {
+        return tagList;
+    }
+
+    public void setTagList(List<String> tagList) {
+        this.tagList = tagList;
+    }
 
     public long getId() {
         return id;
