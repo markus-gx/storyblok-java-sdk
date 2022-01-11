@@ -33,7 +33,7 @@ For those who are not yet familiar with GitHub packages you can also pull from J
  <dependency>
     <groupId>com.github.geilix10</groupId>
     <artifactId>storyblok-java-sdk</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
