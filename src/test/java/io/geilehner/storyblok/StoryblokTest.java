@@ -2,12 +2,11 @@ package io.geilehner.storyblok;
 
 import io.geilehner.storyblok.exception.StoryblokException;
 import io.geilehner.storyblok.model.*;
-import io.geilehner.storyblok.model.content.StoryContent;
+import io.geilehner.storyblok.model.assets.AssetUpload;
 import io.geilehner.storyblok.model.content.StoryVersion;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 public class StoryblokTest {
@@ -53,6 +52,7 @@ public class StoryblokTest {
         Assert.assertNotNull(response.getStory());
 
         //update
+        //DONT UPDATE A RESPONSE, gson is not resolving the custom types in body...
         response.getStory().getContent().getBody().add(new Feature("new feature lol"));
         response.getStory().getContent().getBody().add(new Feature("another one"));
         ManagementStory<CustomBody> response2 = client.updateStory(response,CustomBody.class);
@@ -62,5 +62,12 @@ public class StoryblokTest {
         //delete
 
         client.deleteStory(response2.getStory().getId());
+    }
+
+    @Test
+    public void testUploadAssetSignedResponse() throws StoryblokException {
+        Storyblok client = new Storyblok("Q379bI7btilfPJ4F1PdmSQtt","ilazVdybVGDCKEgAGrdHqwtt-74483-_UX8PA6bziVUvLF3MeYW","156697");
+        AssetUpload upload = client.uploadAsset("mytest.jpg","400x500");
+        Assert.assertNotNull(upload);
     }
 }

@@ -11,6 +11,8 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import io.geilehner.storyblok.adapters.*;
 import io.geilehner.storyblok.exception.StoryblokException;
 import io.geilehner.storyblok.model.*;
+import io.geilehner.storyblok.model.assets.AssetUpload;
+import io.geilehner.storyblok.model.assets.AssetUploadBody;
 import io.geilehner.storyblok.model.content.StoryContent;
 
 import java.lang.reflect.Type;
@@ -165,6 +167,43 @@ public class Storyblok {
             throw new StoryblokException(e.getMessage());
         }
         return false;
+    }
+
+    /**
+     *
+     * @param filename "example.jpg"
+     * @param size eg. 400x500
+     * @return
+     * @throws StoryblokException
+     */
+    public AssetUpload uploadAsset(String filename, String size) throws StoryblokException {
+        return uploadAsset(filename,size,null);
+    }
+
+    /**
+     *
+     * @param filename "example.jpg"
+     * @param size eg. 400x500
+     * @param assetFolderId e.g 123
+     * @return
+     * @throws StoryblokException
+     */
+    public AssetUpload uploadAsset(String filename, String size, String assetFolderId) throws StoryblokException {
+        if(this.MAPI_URL == null) throw new StoryblokException("Management API not initialized!");
+        HttpResponse<JsonNode> response = null;
+        try{
+            response = Unirest.post(ObjectType.ASSET.getPath(this.MAPI_URL))
+                    .header("Authorization", this.OAUTH_TOKEN)
+                    .header("Content-Type","application/json")
+                    .body(gson.toJson(new AssetUploadBody(filename,size,assetFolderId)))
+                    .asJson();
+            if(response.getStatus() < 300){
+                return gson.fromJson(response.getBody().getObject().toString(),AssetUpload.class);
+            }
+        }catch (UnirestException e){
+            throw new StoryblokException(e.getMessage());
+        }
+        throw new StoryblokException(response.getStatus(),response.getStatusText());
     }
 
     private <T> Story<T> fetch(String path, Class<T> type, StoryblokQuery storyblokQuery) throws StoryblokException {
