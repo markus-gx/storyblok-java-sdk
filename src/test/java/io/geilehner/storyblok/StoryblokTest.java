@@ -10,6 +10,7 @@ import org.junit.Test;
 import java.util.Map;
 
 public class StoryblokTest {
+    /*
     @Test
     public void testSimpleStorbylokFetch() throws StoryblokException {
         Storyblok client = new Storyblok("Q379bI7btilfPJ4F1PdmSQtt");
@@ -69,5 +70,5 @@ public class StoryblokTest {
         Storyblok client = new Storyblok("Q379bI7btilfPJ4F1PdmSQtt","ilazVdybVGDCKEgAGrdHqwtt-74483-_UX8PA6bziVUvLF3MeYW","156697");
         AssetUpload upload = client.uploadAsset("mytest.jpg","400x500");
         Assert.assertNotNull(upload);
-    }
+    }*/
 }

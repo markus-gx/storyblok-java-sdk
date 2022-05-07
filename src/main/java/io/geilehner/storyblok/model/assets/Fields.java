@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class Fields {
     private String key;
     private String acl;
+    @SerializedName("Expires")
     private String expires;
     @SerializedName("Cache-Control")
     private String cacheControl;
