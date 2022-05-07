@@ -1,29 +1,28 @@
 package io.geilehner.storyblok;
 
 import io.geilehner.storyblok.exception.StoryblokException;
-import io.geilehner.storyblok.model.CustomStoryContent;
-import io.geilehner.storyblok.model.Stories;
-import io.geilehner.storyblok.model.Story;
-import io.geilehner.storyblok.model.StoryblokQuery;
+import io.geilehner.storyblok.model.*;
+import io.geilehner.storyblok.model.content.StoryContent;
 import io.geilehner.storyblok.model.content.StoryVersion;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class StoryblokTest {
-   /* @Test
+    @Test
     public void testSimpleStorbylokFetch() throws StoryblokException {
-        Storyblok client = new Storyblok("CSBmv0Drr65cwjSpiSw4agtt");
-        Story<CustomStoryContent> story = client.fetchStory("home",CustomStoryContent.class);
+        Storyblok client = new Storyblok("Q379bI7btilfPJ4F1PdmSQtt");
+        Story<CustomStoryContent> story = client.fetchStory("test",CustomStoryContent.class);
         Assert.assertNotNull(story);
         Assert.assertNotNull(story.getContent());
         Assert.assertNotNull(story.getFullSlug());
 
-        Story<Map<String,Object>> story2 = client.fetchStory("home");
+        Story<Map<String,Object>> story2 = client.fetchStory("test");
         Assert.assertNotNull(story2.getContent());;
 
-        Story<Map<String,Object>> story3 = client.fetchStory("home",StoryblokQuery.StoryblokQueryBuilder.newBuilder()
+        Story<Map<String,Object>> story3 = client.fetchStory("test",StoryblokQuery.StoryblokQueryBuilder.newBuilder()
                 .version(StoryVersion.published)
                 .build());
         Assert.assertNotNull(story3);
@@ -34,5 +33,34 @@ public class StoryblokTest {
 
         Assert.assertNotNull(story4.getStories());
         Assert.assertEquals(story4.getPerPage(),25);
-    }*/
+    }
+
+    @Test
+    public void testManagementAPICreateStory() throws StoryblokException {
+        Storyblok client = new Storyblok("Q379bI7btilfPJ4F1PdmSQtt","ilazVdybVGDCKEgAGrdHqwtt-74483-_UX8PA6bziVUvLF3MeYW","156697");
+        ManagementStory<CustomBody> story = new ManagementStory<>();
+        story.setPublish(1);
+        story.setStory(new Story<>());
+        story.getStory().setSlug("ich-bin-management");
+        story.getStory().setName("Ich bin Management");
+        CustomBody customBody = new CustomBody("page");
+        customBody.getBody().add(new Feature("ich feature"));
+        story.getStory().setContent(customBody);
+        story.getStory().setFolder(false);
+        story.getStory().setParentId(0);
+        ManagementStory<CustomBody> response = client.createStory(story,CustomBody.class);
+
+        Assert.assertNotNull(response.getStory());
+
+        //update
+        response.getStory().getContent().getBody().add(new Feature("new feature lol"));
+        response.getStory().getContent().getBody().add(new Feature("another one"));
+        ManagementStory<CustomBody> response2 = client.updateStory(response,CustomBody.class);
+
+        Assert.assertNotNull(response2.getStory());
+
+        //delete
+
+        client.deleteStory(response2.getStory().getId());
+    }
 }
