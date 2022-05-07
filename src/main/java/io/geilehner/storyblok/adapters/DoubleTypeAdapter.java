@@ -6,7 +6,6 @@ import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
 
 import java.io.IOException;
-import java.util.UUID;
 
 public class DoubleTypeAdapter extends TypeAdapter<Double> {
     @Override

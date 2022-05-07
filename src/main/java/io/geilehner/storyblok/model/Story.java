@@ -1,18 +1,15 @@
 package io.geilehner.storyblok.model;
 
 import io.geilehner.storyblok.model.content.AlternateStory;
-import io.geilehner.storyblok.model.content.StoryContent;
 import io.geilehner.storyblok.model.content.TranslatedSlug;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
 /**
  * Storyblok Story Object
- * @see {https://www.storyblok.com/docs/api/content-delivery#core-resources/stories/the-story-object}
+ * @see <a href="https://www.storyblok.com/docs/api/content-delivery#core-resources/stories/the-story-object">The Story Object</a>
  * @param <T> The custom content object retrieved
  */
 public class Story<T> {
@@ -34,6 +31,8 @@ public class Story<T> {
     private UUID groupId;
     private List<TranslatedSlug> translatedSlugs;
     private List<AlternateStory> alternates;
+
+    private boolean isFolder;
 
     public List<String> getTagList() {
         return tagList;
@@ -177,5 +176,13 @@ public class Story<T> {
 
     public void setAlternates(List<AlternateStory> alternates) {
         this.alternates = alternates;
+    }
+
+    public boolean isFolder() {
+        return isFolder;
+    }
+
+    public void setFolder(boolean folder) {
+        isFolder = folder;
     }
 }
